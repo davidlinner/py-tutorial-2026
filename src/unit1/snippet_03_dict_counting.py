@@ -8,6 +8,31 @@ for word in words:
 
 print(counts)
 
+students = dict()
+
+class A:
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return self.name
+
+    def __hash__(self):
+        return hash(self.name)
+
+    def __eq__(self, other):
+        return self.name == other.name
+
+s1 = A('dave')
+s2 = A('dave')
+s3 = A('paul')
+
+students[s1] = 'a'
+students[s2] = 'b'
+students[s3] = 'c'
+
+print(students)
+
 """
 Next:
 

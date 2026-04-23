@@ -5,7 +5,7 @@ def greet(name, greeting="Hello", excited=False):
         text += "!"
     return text
 
-print(greet("Ada"))
+print(greet("Ada", excited=True))
 print(greet("Bob", greeting="Hi", excited=True))
 
 

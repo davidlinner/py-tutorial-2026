@@ -1,3 +1,4 @@
+import random
 
 names = ["Ada", "Bob", "", "Charly"]
 
@@ -6,7 +7,17 @@ for name in names:
     if name:
         upper_names.append(name.upper())
 
+for i in range(0, 10):
+    print(i)
+
 print(upper_names)
+
+# Create a list with 20 random numbers and obtain a range
+random_numbers = [random.randint(1, 100) for _ in range(20)]
+print(f"Random numbers: {random_numbers}")
+
+range_10_to_15 = random_numbers[10:-2]
+print(f"Range from index 10 to 15 (exclusive): {range_10_to_15}")
 
 """
 Next:
