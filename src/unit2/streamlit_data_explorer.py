@@ -10,6 +10,7 @@ scores = pd.DataFrame(
 )
 
 st.title("Mini Data Explorer")
+
 minimum_score = st.slider("Minimum score", 0, 20, 12)
 selected_group = st.selectbox("Group", ["All"] + sorted(scores["group"].unique().tolist()))
 

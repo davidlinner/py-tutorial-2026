@@ -23,4 +23,4 @@ print("Best product:", product_names[best_product_index])
 high_sales_mask = sales >= 150
 print("High-sales mask (>= 150):")
 print(high_sales_mask)
-print("Number of high-sales entries:", int(high_sales_mask.sum()))
+print("Number of high-sales entries:", high_sales_mask.sum())

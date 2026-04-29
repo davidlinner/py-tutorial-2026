@@ -15,5 +15,6 @@ weather["is_warm"] = weather["temperature_filled"] >= 20
 warm_days = weather[weather["is_warm"]]
 
 print("Weather table:", weather)
-print("Warm days:", warm_days)
+print("Warm days:")
+print(warm_days)
 print("Average filled temperature:", round(weather["temperature_filled"].mean(), 2))
